@@ -1,17 +1,9 @@
 
-
-$(document).ready(function() {
-	//make sure the page is ready befor running the scripts
-	// This is the hamburger menu
-	$(".hamburger").click(function(){
-
-	  $(this).toggleClass('active');
-	  $(".mobile-menu").fadeToggle();
-
-	});
-	// end hamburger menu
-
-
+$( document ).ready(function() {
+   $(".burger-button").click(function(){
+     $(".burger-button").toggleClass("active");
+     $(".burger-menu").toggleClass("active");
+   });
 });
 // THIS IS THE TYPE EFFECT
 const typedTextSpan = document.querySelector(".typed-text");

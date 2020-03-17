@@ -272,38 +272,91 @@
 
 
   /* Hamburger Menu */
-  .hamburger,
-  .mobile-menu {
-    display: none;
-  }
+  .burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 9;
+  padding: 8px;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: green;
+  background-color:#383;
+}
 
-  .hamburger {
-    position: absolute;
-    top:0;
-    right:0;
-    z-index: 3;
-    font-size: 1.5rem;
-    padding:2% 5%;
-  }
-  .active {
-    color: #e67e22;
-  }
+.burger-top, .burger-bottom{
+  position: absolute;
+}
 
-  .mobile-menu {
-    position: absolute;
-    top: 0;
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: -100vh;
     left:0;
-    right:0;
-    bottom: 0;
-    background-color: rgb(60,60,65);
-    padding: 10%;
-  }
-  .mobile-menu a {
-    color: white;
-    padding: 1rem;
-    display: block;
-    text-decoration: none;
-  }
+    right: 0;
+    bottom: 100vh;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  top:0;
+  bottom:0;
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
 
 
   /* -- Footer -- */
@@ -611,8 +664,15 @@ body {
 
 } /* end media query */
 
-
+.mobileshow {
+  display: none;
+}
 /* This media query kicks into action at the gridlex xs breakpoint */
 @media(max-width:576px) {
-
+.mobileshow {
+  display: block;
+}
+.mobilehide {
+  display: none;
+}
 } /* end media query */
