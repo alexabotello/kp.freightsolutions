@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Meta Data -->
+    <meta charset="utf-8">
+
+    <!-- Meta data for SEO purposes. -->
+    <title> {{page.title}} </title>
+    <meta name="description" content="{{page.meta-description}}">
+    <meta name="keywords" content="{{page.meta-keywords}}">
+
+    <!-- meta data to tell the browser that your devide is responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <!--  Social media sharing META Tags -->
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description" content="{{page.meta-description}}">
+    <meta property="og:image" content="{{page.featured-image_path}}">
+    <meta property="og:url" content="{{page.url}}">
+    <meta name="twitter:card" content="{{page.meta-description}}">
+    <meta name="og:site_name" content="<!-- ADD SITE NAME HERE -->">
+
+  <!-- end of meta tags -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700,900&display=swap" rel="stylesheet"></link>
+    <link href="https://fonts.googleapis.com/css?family=Changa:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"></link>
+
+    <!-- Font Awesome Version 5 for Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+
+    <!-- Magnific Popup for lightbox galleries   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+
+    <!-- our own custom stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<!-- - - - - - - - - - - - - this is the header - - - - - - - - - - - - - -  -->
+
+<header class="grid">
+  <div class="col-4-middle">
+    <a href="/">
+      <h2 class="logo"> KP FREIGHT SOLUTIONS </h2>
+    </a>
+  </div>
+  <nav class="col-8-middle right">
+    <a href="#"> Our Services </a>
+    <a href="#"> About Us </a>
+    <a href="#"> Contact Us </a>
+    <a href="#" class="emphasis"> Call Us Now! </a>
+  </nav>
+</header>
+
+<!-- - - - - - ---- - - -this is a banner - - - - --- - - - - - - - - - -- - - -->
+
+<section class="banner grid-center fixed">
+  <div class="col-6_sm-12-middle centered">
+    <div class="container">
+    <p>Committed to delivering <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+  </div>
+    <a href="#" class="button"> Request A Quote </a>
+  </div>
+</section>
+
+<!-- ------------ this is the services section --------------------- -->
+
+<section class="padded centered">
+  <h2> Our Services </h2>
+  <div class="grid padded-1">
+    <div class="col-4_sm-12 padded-1">
+      <i class="fas fa-truck"></i>
+      <h4> Nationwide Deliveries </h4>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+      <i class="far fa-comment"></i>
+      <h4> Service #2 </h4>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="col-4_sm-12 padded-1">
+      <i class="far fa-file"></i>
+      <h4> Service #3 </h4>
+      <p>Irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+</section>
+
+<!-- - - - - -- - - - this is the about section - - - -- - - - - - -- -->
+
+<section class="padded">
+  <div class="grid padded flex-flip">
+    <div class="col-5_sm-12 bg-image">
+    </div>
+    <div class="col-7_sm-12-middle padded">
+      <h4 class="subtle-heading"> About Us </h4>
+      <h3> Chicago Based </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a class="button" href="#"> Read More </a>
+    </div>
+  </div>
+  <div class="grid padded flex-flip">
+    <div class="col-7_sm-12-middle padded">
+      <h4 class="subtle-heading"> Meet the Owner </h4>
+      <h3> This this a heading </h3>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <a class="button" href="#"> Read More </a>
+    </div>
+    <div class="col-5_sm-12 bg-image">
+    </div>
+  </div>
+</section>
+
+<!-- - - - - --  - - this is the contact section - - - -- - -- - - - -->
+
+<section class="grid padded">
+  <div class="col-6_sm-12 padded">
+    <h2> Contact Us </h2>
+    <p> Please feel free to get in touch with us via phone or email to answer any questions that you have.</p>
+    <p> <strong> Email: </strong> hello@company.com </p>
+    <p> <strong> Phone: </strong> 0412 555 555 </p>
+    <p> <strong> Facebook: </strong> fb.com/companyname </p>
+  </div>
+  <div class="col-6_sm-12-middle padded">
+    <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+      <div class="col-6_sm-12">
+        <input type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="col-6_sm-12">
+        <input type="email" name="_replyto" placeholder="Your Email">
+      </div>
+      <div class="col-12">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" name="message" value="Send" class="button">
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- --------------- this is the footer -------------------------- -->
+
+<footer class="grid">
+  <!-- column -->
+  <div class="col-5_sm-12 padded">
+    <h2 class="logo"> KP FREIGHT SOLUTIONS </h2>
+    <p> Innovative solutions for all of your logistics needs. </p>
+    <p> Axela Designs copyright 2020 </p>
+  </div>
+  <div class="col-1 sm-hidden"></div>
+  <!-- column -->
+  <div class="col-6_sm-12-middle padded right">
+    <nav class="inline">
+      <a href="#"> About Us </a>|
+      <a href="#"> Our Services </a>|
+      <a href="#"> Contact Us </a>
+    </nav>
+    <nav class="inline socials">
+      <a href="#">
+        <i class="fab fa-facebook-square"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </nav>
+  </div>
+</footer>
+<!-- -----------scripts --------------- -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="/scripts.js"></script>
+
+</body>
+</html>
