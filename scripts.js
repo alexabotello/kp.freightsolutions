@@ -9,7 +9,7 @@ $( document ).ready(function() {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["innovative solutions", "fun", "a journey", "LIFE"];
+const textArray = ["innovative solutions", "no fail service", "personalized communication"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const newTextDelay = 2000; // Delay between current and next text
