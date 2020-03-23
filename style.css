@@ -470,8 +470,4 @@ body {
 .fontsize {
   font-size: 20px;
 }
-
-.banner-with-header {
-  background-size: contain;
-}
 } /* end media query */
