@@ -322,7 +322,7 @@
     margin: 0;
     background: none;
   }
-  
+
   .padding0 {
     padding: 0%;
   }
@@ -470,4 +470,7 @@ body {
 .fontsize {
   font-size: 20px;
 }
+
+.banner-with-header {
+  background-size: contain;
 } /* end media query */
