@@ -1,10 +1,4 @@
 
-$( document ).ready(function() {
-   $(".burger-button").click(function(){
-     $(".burger-button").toggleClass("active");
-     $(".burger-menu").toggleClass("active");
-   });
-});
 // THIS IS THE TYPE EFFECT
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
