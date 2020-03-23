@@ -322,17 +322,9 @@
     margin: 0;
     background: none;
   }
-
-  .bg-pencils {
-    background-image: url('../images/pencils.jpg');
-    background-position: left;
-  }
-
-  .bg-image {
-    background-image: url('../images/adventure.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 10rem;
+  
+  .padding0 {
+    padding: 0%;
   }
   /* --------------- JAVASCRIPT -------------- */
 
