@@ -475,5 +475,12 @@ body {
 .fixed {
   background-attachment: initial;
 }
+
+.container p {
+  font-size: 2rem;
+}
+
+.container {
+  height: 22vh;
 }
 } /* end media query */
