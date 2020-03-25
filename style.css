@@ -483,4 +483,8 @@ body {
 .container {
   height: 22vh;
 }
+
+h2 {
+  font-size: 1.75rem;
+}
 } /* end media query */
