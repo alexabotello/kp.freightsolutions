@@ -11,7 +11,7 @@
   }
 
   img {
-    max-width: 100%; /* this ensures images never break their container */
+    max-width: 84%; /* this ensures images never break their container */
     height: auto;
   }
 
